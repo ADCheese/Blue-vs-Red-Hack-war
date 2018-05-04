@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Bodoni72.ttc">
-            <string>BodoniSvtyTwoITCTT-Book</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -72,53 +67,175 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rss-DU-gR7" userLabel="Button 1">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rss-DU-gR7" userLabel="Switch 1">
                                 <rect key="frame" x="268" y="614" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.0001017355225947213" green="0.34200416782897441" blue="0.68401878238341962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.062960177382279325" green="0.51978343733092158" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="Button1:" destination="BYZ-38-t0r" eventType="valueChanged" id="UlX-vw-NRc"/>
-                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="valueChanged" id="5eK-eW-dzS"/>
+                                    <action selector="Switch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="MN6-9p-aXF"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-rS-rDr" userLabel="Button 2">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-rS-rDr" userLabel="Switch 2">
                                 <rect key="frame" x="387" y="614" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.00010173552260000001" green="0.34200416779999998" blue="0.68401878240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.062960177379999996" green="0.51978343729999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rdb-wp-exU"/>
-                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="valueChanged" id="8sh-bP-10c"/>
+                                    <action selector="Switch2:" destination="BYZ-38-t0r" eventType="valueChanged" id="vwO-Ui-AGZ"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IWM-PB-FaL" userLabel="Button 3">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IWM-PB-FaL" userLabel="Switch 3">
                                 <rect key="frame" x="268" y="712" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.00010173552260000001" green="0.34200416779999998" blue="0.68401878240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.10190648063443397" green="0.54122404178721839" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="Button3:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zb8-mH-Nwk"/>
+                                    <action selector="Switch3:" destination="BYZ-38-t0r" eventType="valueChanged" id="yn6-wM-AHR"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oT5-Y8-TLn" userLabel="Button 4">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oT5-Y8-TLn" userLabel="Switch 4">
                                 <rect key="frame" x="387" y="712" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.00010173552260000001" green="0.34200416779999998" blue="0.68401878240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.062960177379999996" green="0.51978343729999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="Button4:" destination="BYZ-38-t0r" eventType="valueChanged" id="W6f-w9-0y7"/>
+                                    <action selector="Switch4:" destination="BYZ-38-t0r" eventType="valueChanged" id="Odg-uE-sqD"/>
+                                    <action selector="Switch5:" destination="BYZ-38-t0r" eventType="valueChanged" id="D5M-AN-Eya"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ygo-M5-Y5a" userLabel="Button 5">
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ygo-M5-Y5a" userLabel="Switch 5">
                                 <rect key="frame" x="332" y="653" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.00010173552260000001" green="0.34200416779999998" blue="0.68401878240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.062960177379999996" green="0.51978343729999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="Button5:" destination="BYZ-38-t0r" eventType="valueChanged" id="SgU-AE-sRo"/>
+                                    <action selector="Switch5:" destination="BYZ-38-t0r" eventType="valueChanged" id="yBa-nm-sd4"/>
                                 </connections>
                             </switch>
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-0J-vHs" userLabel="Switch 6">
+                                <rect key="frame" x="268" y="247" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.53948753238341962" green="0.04941079724218473" blue="0.011680007180522537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.079425410261987683" blue="0.0094888021453012339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="Switch6:" destination="BYZ-38-t0r" eventType="valueChanged" id="FmW-3t-0uW"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmJ-mP-hXW" userLabel="Switch 7">
+                                <rect key="frame" x="387" y="247" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="Switch7:" destination="BYZ-38-t0r" eventType="valueChanged" id="0GS-LT-Tid"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfd-DZ-XFs" userLabel="Switch 8">
+                                <rect key="frame" x="268" y="346" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="Switch8:" destination="BYZ-38-t0r" eventType="valueChanged" id="eIo-4K-yj5"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-RH-Cqy" userLabel="Switch 9">
+                                <rect key="frame" x="332" y="293" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="Switch9:" destination="BYZ-38-t0r" eventType="valueChanged" id="bYr-jf-kUV"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZZN-ov-34G" userLabel="Switch 10">
+                                <rect key="frame" x="387" y="346" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.759229274611399" green="0.060302096618921677" blue="0.0072041763697081422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="Switch10:" destination="BYZ-38-t0r" eventType="valueChanged" id="iBa-4g-QmP"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrI-NA-JHY" userLabel="Button1">
+                                <rect key="frame" x="163" y="742" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xj-Va-AfR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9b-VI-OaE" userLabel="Button2">
+                                <rect key="frame" x="599" y="742" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPS-WV-DMZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE4-cf-lY0" userLabel="Button3">
+                                <rect key="frame" x="310" y="884" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWF-bu-YEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2r-BI-yc0" userLabel="Button4">
+                                <rect key="frame" x="287" y="607" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xai-XX-cQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwb-gz-pOo" userLabel="Button5">
+                                <rect key="frame" x="480" y="884" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1z-uy-Caw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFB-Uy-ip5" userLabel="Button6">
+                                <rect key="frame" x="480" y="596" width="28" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
+                                <connections>
+                                    <action selector="Button6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPG-OT-tPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-M9-f0w" userLabel="Button8">
+                                <rect key="frame" x="466" y="154" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuK-i2-N9g" userLabel="Button9">
+                                <rect key="frame" x="585" y="293" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8x-Ca-nQX" userLabel="Button10">
+                                <rect key="frame" x="480" y="414" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-gI-ynz" userLabel="Button11">
+                                <rect key="frame" x="227" y="154" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-ni-mb7" userLabel="Button12">
+                                <rect key="frame" x="197" y="396" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-v1-eIy" userLabel="Button7">
+                                <rect key="frame" x="310" y="293" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="glossy-red-button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -126,8 +243,26 @@
                     <connections>
                         <outlet property="BlueHacker" destination="3JP-CF-JHJ" id="aih-Ij-rNN"/>
                         <outlet property="BlueLabel" destination="GN6-Uq-sIJ" id="MaV-AU-0SR"/>
+                        <outlet property="Button2" destination="z9b-VI-OaE" id="qhh-B2-TFq"/>
+                        <outlet property="Button5" destination="Zwb-gz-pOo" id="4e3-Zv-zxq"/>
+                        <outlet property="ButtonOutlet1" destination="jrI-NA-JHY" id="MZW-Zj-SoD"/>
+                        <outlet property="ButtonOutlet2" destination="z9b-VI-OaE" id="pMl-OD-GYP"/>
+                        <outlet property="ButtonOutlet3" destination="kE4-cf-lY0" id="EkJ-58-sJC"/>
+                        <outlet property="ButtonOutlet4" destination="N2r-BI-yc0" id="7vi-X6-sfN"/>
+                        <outlet property="ButtonOutlet5" destination="Zwb-gz-pOo" id="BRT-nP-b0d"/>
+                        <outlet property="ButtonOutlet6" destination="jFB-Uy-ip5" id="t2H-2i-Lbj"/>
                         <outlet property="RedHacker" destination="Osu-hZ-dQJ" id="aOm-PO-Loq"/>
                         <outlet property="RedLabel" destination="tWz-kt-tx3" id="ubd-Tx-pxb"/>
+                        <outlet property="SwitchOutlet1" destination="rss-DU-gR7" id="gFe-vR-3xf"/>
+                        <outlet property="SwitchOutlet10" destination="ZZN-ov-34G" id="Z5l-Ti-4jc"/>
+                        <outlet property="SwitchOutlet2" destination="wuA-rS-rDr" id="bbh-xH-Agv"/>
+                        <outlet property="SwitchOutlet3" destination="IWM-PB-FaL" id="t4m-aK-LpH"/>
+                        <outlet property="SwitchOutlet4" destination="oT5-Y8-TLn" id="5UD-PH-beZ"/>
+                        <outlet property="SwitchOutlet5" destination="Ygo-M5-Y5a" id="8Yf-cO-bDx"/>
+                        <outlet property="SwitchOutlet6" destination="bmJ-mP-hXW" id="4NG-Vl-yY4"/>
+                        <outlet property="SwitchOutlet7" destination="bmJ-mP-hXW" id="C1f-RU-YzT"/>
+                        <outlet property="SwitchOutlet8" destination="Lfd-DZ-XFs" id="byV-vB-vc3"/>
+                        <outlet property="SwitchOutlet9" destination="XoZ-RH-Cqy" id="2b4-Qv-BNk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -137,7 +272,9 @@
     </scenes>
     <resources>
         <image name="1" width="852" height="480"/>
+        <image name="12241-glossy-blue-button-design" width="600" height="600"/>
         <image name="4" width="852" height="480"/>
+        <image name="glossy-red-button" width="2400" height="2400"/>
         <image name="horizontal-line" width="1600" height="1600"/>
     </resources>
 </document>
