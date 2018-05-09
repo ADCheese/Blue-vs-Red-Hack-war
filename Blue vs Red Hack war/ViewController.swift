@@ -35,6 +35,46 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var ButtonOutlet5: UIButton!
     @IBOutlet weak var ButtonOutlet6: UIButton!
     
+    @IBOutlet weak var ButtonOutlet7: UIButton!
+    @IBOutlet weak var ButtonOutlet8: UIButton!
+    @IBOutlet weak var ButtonOutlet9: UIButton!
+    @IBOutlet weak var ButtonOutlet10: UIButton!
+    @IBOutlet weak var ButtonOutlet11: UIButton!
+    @IBOutlet weak var ButtonOutlet12: UIButton!
+    
+    
+
+    @IBOutlet weak var horizontalSlider3: UISlider!
+    @IBOutlet weak var horizontalSlider4: UISlider!
+    @IBOutlet weak var horizontalSlider2: UISlider!
+    @IBOutlet weak var horizontalSlider: UISlider!
+
+
+    
+    @IBOutlet weak var verticalSlider4: UISlider! {
+        didSet {
+        verticalSlider4.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+        }
+    }
+    @IBOutlet weak var verticalSlider3: UISlider! {
+        didSet {
+            verticalSlider3.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+        }
+    }
+    
+    
+    @IBOutlet weak var verticalSlider1: UISlider! {
+        didSet{
+            
+        verticalSlider1.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+        }
+    }
+    @IBOutlet weak var verticalSlider2: UISlider! {
+        didSet{
+            verticalSlider2.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+ 
+        }
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -59,6 +99,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         
     }
+    
+    
     
     @IBAction func Switch1(_ sender: UISwitch) {
         
@@ -197,30 +239,40 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBAction func Button1(_ sender: UIButton) {
+        self.ButtonOutlet2.alpha = 1
+        self.ButtonOutlet1.alpha = 0
         
         
         
     }
     
     @IBAction func Button2(_ sender: UIButton) {
+        self.ButtonOutlet2.alpha = 0
+        self.ButtonOutlet3.alpha = 1
         
         
         
     }
     
     @IBAction func Button3(_ sender: UIButton) {
+        self.ButtonOutlet3.alpha = 0
+        self.ButtonOutlet4.alpha = 1
         
         
         
     }
     
     @IBAction func Button4(_ sender: UIButton) {
+        self.ButtonOutlet4.alpha = 0
+        self.ButtonOutlet5.alpha = 1
         
         
         
     }
     
     @IBAction func Button5(_ sender: UIButton) {
+        self.ButtonOutlet6.alpha = 1
+        self.ButtonOutlet5.alpha = 0
         
         
         
@@ -228,9 +280,57 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func Button6(_ sender: UIButton) {
         
-        
+        self.ButtonOutlet6.alpha = 0
+        self.SwitchOutlet1.alpha = 1
+        self.SwitchOutlet2.alpha = 1
+        self.SwitchOutlet3.alpha = 1
+        self.SwitchOutlet4.alpha = 1
+        self.SwitchOutlet5.alpha = 1
+    }
+    
+    
+    
+    
+    @IBAction func Button7(_ sender: UIButton) {
+        self.ButtonOutlet7.alpha = 0
+        self.ButtonOutlet8.alpha = 1
         
     }
+    @IBAction func Button8(_ sender: UIButton) {
+        
+        self.ButtonOutlet8.alpha = 0
+        self.ButtonOutlet9.alpha = 1
+        
+    }
+    
+    @IBAction func Button9(_ sender: UIButton) {
+        self.ButtonOutlet9.alpha = 0
+        self.ButtonOutlet10.alpha = 1
+    }
+    
+    @IBAction func Button10(_ sender: UIButton) {
+        
+        self.ButtonOutlet10.alpha = 0
+        self.ButtonOutlet11.alpha = 1
+        
+    }
+    
+    @IBAction func Button11(_ sender: UIButton) {
+        self.ButtonOutlet12.alpha = 1
+        self.ButtonOutlet11.alpha = 0
+    }
+    
+    
+    @IBAction func Button12(_ sender: UIButton) {
+        self.ButtonOutlet12.alpha = 0
+        self.SwitchOutlet6.alpha = 1
+        self.SwitchOutlet7.alpha = 1
+        self.SwitchOutlet8.alpha = 1
+        self.SwitchOutlet9.alpha = 1
+        self.SwitchOutlet10.alpha = 1
+    }
+    
+    
     
     
     
