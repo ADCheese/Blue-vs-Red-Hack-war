@@ -43,17 +43,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var ButtonOutlet12: UIButton!
     
     
-
+    
     @IBOutlet weak var horizontalSlider3: UISlider!
     @IBOutlet weak var horizontalSlider4: UISlider!
     @IBOutlet weak var horizontalSlider2: UISlider!
     @IBOutlet weak var horizontalSlider: UISlider!
-
-
+    
+    
+    
+    
+    
     
     @IBOutlet weak var verticalSlider4: UISlider! {
         didSet {
-        verticalSlider4.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+            verticalSlider4.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
         }
     }
     @IBOutlet weak var verticalSlider3: UISlider! {
@@ -66,13 +69,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var verticalSlider1: UISlider! {
         didSet{
             
-        verticalSlider1.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+            verticalSlider1.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
         }
     }
     @IBOutlet weak var verticalSlider2: UISlider! {
         didSet{
             verticalSlider2.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
- 
+            
         }
     }
     
@@ -289,8 +292,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     
-    
-    
     @IBAction func Button7(_ sender: UIButton) {
         self.ButtonOutlet7.alpha = 0
         self.ButtonOutlet8.alpha = 1
@@ -300,7 +301,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         self.ButtonOutlet8.alpha = 0
         self.ButtonOutlet9.alpha = 1
-        
     }
     
     @IBAction func Button9(_ sender: UIButton) {
@@ -330,9 +330,35 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.SwitchOutlet10.alpha = 1
     }
     
+    @IBAction func ActionSlider(_ sender: UISlider) {
+        let value = sender.value
+        
+        if verticalSlider1.value == 0 && verticalSlider2.value == 0 &&
+            horizontalSlider.value == 0 && horizontalSlider2.value == 0
+            
+        {
+            let alert = UIAlertController(title: "Red Hacker Got Hacked!", message:"\(BlueHacker.text!)", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Play Again?", style: .default, handler: { (action) in
+            }))
+            self.present(alert,animated: true, completion: nil)
+        }
+        
     
-    
-    
-    
+        
+        
+    }
+    @IBAction func ActionSlider2(_ sender: UISlider) {
+        let value = sender.value
+        
+        if verticalSlider3.value == 0 &&
+            verticalSlider4.value == 0 && horizontalSlider3.value == 0 && horizontalSlider4.value == 0
+        {
+            let alert = UIAlertController(title: "Blue Hacker Got Hacked!", message:"\(RedHacker.text!)", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Play Again?", style: .default, handler: { (action) in
+            }))
+            self.present(alert,animated: true, completion: nil)
+        }
+        
+        
+    }
 }
-
