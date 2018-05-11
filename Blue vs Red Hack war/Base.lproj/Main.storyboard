@@ -158,7 +158,7 @@
                                     <action selector="Switch10:" destination="BYZ-38-t0r" eventType="valueChanged" id="iBa-4g-QmP"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrI-NA-JHY" userLabel="Button1">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrI-NA-JHY" userLabel="Button1">
                                 <rect key="frame" x="163" y="742" width="28" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="12241-glossy-blue-button-design"/>
@@ -206,7 +206,7 @@
                                     <action selector="Button6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPG-OT-tPg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-v1-eIy" userLabel="Button7">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-v1-eIy" userLabel="Button7">
                                 <rect key="frame" x="310" y="293" width="42" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="glossy-red-button"/>
@@ -257,9 +257,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DeM-8j-kUB" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="561" y="785" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_4_9393323142"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_4_9393323142"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_3_6817113999"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_3_6817113999"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="aMe-Yw-6Fj"/>
@@ -268,11 +270,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SuA-ul-kME" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="385" y="208" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="f29bdfe1_1_30x30"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="f29bdfe1_1_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="Shield_Blue_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="Shield_Blue_30x30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider2:" destination="BYZ-38-t0r" eventType="valueChanged" id="uiN-zI-G7d"/>
@@ -281,12 +283,12 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-a4-hKG" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="212" y="210" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.53948753240000002" green="0.049410797239999998" blue="0.01168000718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_3_6817113999"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_3_6817113999"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="Shield_Blue_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="Shield_Blue_30x30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider2:" destination="BYZ-38-t0r" eventType="valueChanged" id="wM1-B4-zKl"/>
@@ -295,11 +297,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="czB-NO-CDd" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="45" y="208" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="f29bdfe1_1_30x30"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="f29bdfe1_1_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_4_9393323142"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_4_9393323142"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider2:" destination="BYZ-38-t0r" eventType="valueChanged" id="Foh-dX-yYz"/>
@@ -308,9 +310,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-e8-saz" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="45" y="785" width="183" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.79596421630000003" green="0.15349372159999999" blue="0.076196120120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="Shield_Blue_30x30"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="Shield_Blue_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="f29bdfe1_1_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="f29bdfe1_1_30x30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cyh-VY-4HL"/>
@@ -319,9 +323,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5vZ-CV-1Hc" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="225" y="785" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <color key="maximumTrackTintColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_4_9393323142"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_4_9393323142"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_3_6817113999"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_3_6817113999"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="lMf-Bf-NaL"/>
@@ -330,9 +336,11 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BWG-tY-f4X" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="385" y="785" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.79596421630000003" green="0.15349372159999999" blue="0.076196120120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="Shield_Blue_30x30"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="Shield_Blue_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="f29bdfe1_1_30x30"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="f29bdfe1_1_30x30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="iDP-Ni-SpF"/>
@@ -341,16 +349,32 @@
                             <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hYs-VX-GDh" customClass="Shield_Sliders" customModule="Blue_vs_Red_Hack_war" customModuleProvider="target">
                                 <rect key="frame" x="561" y="210" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.7592292746" green="0.060302096620000002" blue="0.0072041763699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0040567871090000001" blue="0.40139248700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_3_6817113999"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_3_6817113999"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlight" value="imageedit_4_9393323142"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ThumbImage" value="imageedit_4_9393323142"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ActionSlider2:" destination="BYZ-38-t0r" eventType="valueChanged" id="kND-o9-59G"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn off Blue's Shield!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-1a-4zE">
+                                <rect key="frame" x="200" y="445" width="368" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <color key="highlightedColor" red="0.79596421630000003" green="0.15349372159999999" blue="0.076196120120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn off Red's Shield!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W29-vO-ZWm">
+                                <rect key="frame" x="214" y="549" width="368" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.062960177379999996" green="0.51978343729999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.79596421630000003" green="0.15349372159999999" blue="0.076196120120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -358,6 +382,7 @@
                     <connections>
                         <outlet property="BlueHacker" destination="3JP-CF-JHJ" id="aih-Ij-rNN"/>
                         <outlet property="BlueLabel" destination="GN6-Uq-sIJ" id="MaV-AU-0SR"/>
+                        <outlet property="BluesShield" destination="W29-vO-ZWm" id="ehG-lo-xzu"/>
                         <outlet property="ButtonOutlet1" destination="jrI-NA-JHY" id="MZW-Zj-SoD"/>
                         <outlet property="ButtonOutlet10" destination="o8x-Ca-nQX" id="gnG-tm-Hbw"/>
                         <outlet property="ButtonOutlet11" destination="F8w-gI-ynz" id="kpY-Ve-bpS"/>
@@ -372,6 +397,7 @@
                         <outlet property="ButtonOutlet9" destination="EuK-i2-N9g" id="oEr-AI-J9c"/>
                         <outlet property="RedHacker" destination="Osu-hZ-dQJ" id="aOm-PO-Loq"/>
                         <outlet property="RedLabel" destination="tWz-kt-tx3" id="ubd-Tx-pxb"/>
+                        <outlet property="RedShield" destination="2Q2-1a-4zE" id="HHO-jm-cA3"/>
                         <outlet property="SwitchOutlet1" destination="rss-DU-gR7" id="gFe-vR-3xf"/>
                         <outlet property="SwitchOutlet10" destination="ZZN-ov-34G" id="Z5l-Ti-4jc"/>
                         <outlet property="SwitchOutlet2" destination="wuA-rS-rDr" id="bbh-xH-Agv"/>
@@ -385,11 +411,11 @@
                         <outlet property="horizontalSlider" destination="K9d-e8-saz" id="eGh-XT-QUo"/>
                         <outlet property="horizontalSlider2" destination="BWG-tY-f4X" id="xAA-UT-fJO"/>
                         <outlet property="horizontalSlider3" destination="0fn-a4-hKG" id="40a-5f-R0z"/>
-                        <outlet property="horizontalSlider4" destination="hYs-VX-GDh" id="IjP-ty-6We"/>
+                        <outlet property="horizontalSlider4" destination="SuA-ul-kME" id="9Es-CE-dyG"/>
                         <outlet property="verticalSlider1" destination="DeM-8j-kUB" id="rjr-pd-kec"/>
                         <outlet property="verticalSlider2" destination="5vZ-CV-1Hc" id="OhX-K3-0d3"/>
                         <outlet property="verticalSlider3" destination="hYs-VX-GDh" id="1i5-gz-eP4"/>
-                        <outlet property="verticalSlider4" destination="0fn-a4-hKG" id="aAV-6i-tD1"/>
+                        <outlet property="verticalSlider4" destination="czB-NO-CDd" id="oGV-dW-hPV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

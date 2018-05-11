@@ -13,6 +13,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var RedLabel: UILabel!
     @IBOutlet weak var BlueLabel: UILabel!
     @IBOutlet weak var BlueHacker: UITextField!
+    @IBOutlet weak var RedShield: UILabel!
+    @IBOutlet weak var BluesShield: UILabel!
     
     
     @IBOutlet weak var SwitchOutlet1: UISwitch!
@@ -78,22 +80,69 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
         }
     }
+    func RedAllOn() -> Bool {
+        if SwitchOutlet6.isOn && SwitchOutlet7.isOn && SwitchOutlet8.isOn && SwitchOutlet9.isOn && SwitchOutlet10.isOn {
+            self.horizontalSlider4.alpha = 1
+            self.horizontalSlider3.alpha = 1
+            self.verticalSlider4.alpha = 1
+            self.verticalSlider3.alpha = 1
+            self.RedShield.alpha = 1
+            self.SwitchOutlet6.alpha = 0
+            self.SwitchOutlet7.alpha = 0
+            self.SwitchOutlet8.alpha = 0
+            self.SwitchOutlet9.alpha = 0
+            self.SwitchOutlet10.alpha = 0
+        
+            return true
+        }else{
+            return false
+        }
+    }
+    
+    func BlueAllOn() -> Bool {
+        
+        if SwitchOutlet1.isOn && SwitchOutlet2.isOn && SwitchOutlet3.isOn && SwitchOutlet4.isOn && SwitchOutlet5.isOn {
+            self.horizontalSlider.alpha = 1
+            self.horizontalSlider2.alpha = 1
+            self.verticalSlider1.alpha = 1
+            self.verticalSlider2.alpha = 1
+            self.BluesShield.alpha = 1
+            self.SwitchOutlet1.alpha = 0
+            self.SwitchOutlet2.alpha = 0
+            self.SwitchOutlet3.alpha = 0
+            self.SwitchOutlet4.alpha = 0
+            self.SwitchOutlet5.alpha = 0
+            
+            return true
+        }else{
+            
+            
+            return false
+        }
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         
         if textField == RedHacker {
             RedLabel.text = RedHacker.text
             self.RedHacker.alpha = 0
             self.RedLabel.alpha = 1
+            
             return true
             
         }else{
             BlueLabel.text = BlueHacker.text
             self.BlueHacker.alpha = 0
             self.BlueLabel.alpha = 1
+            Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (timer) in
+                self.ButtonOutlet1.alpha = 1
+                self.ButtonOutlet7.alpha = 1
+            }
+            
+            
         }
         return true
-        
     }
     
     
@@ -117,6 +166,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet4.setOn(true, animated: true)
             
         }
+        BlueAllOn()
     }
     
     
@@ -130,6 +180,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet1.setOn(false, animated: true)
             SwitchOutlet5.setOn(true, animated: true)
         }
+        BlueAllOn()
     }
     
     @IBAction func Switch3(_ sender: UISwitch) {
@@ -142,6 +193,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet2.setOn(false, animated: true)
             SwitchOutlet3.setOn(true, animated: true)
         }
+        BlueAllOn()
     }
     
     @IBAction func Switch4(_ sender: UISwitch) {
@@ -156,6 +208,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet3.setOn(true, animated: true)
             SwitchOutlet4.setOn(true, animated: true)
         }
+        BlueAllOn()
     }
     
     @IBAction func Switch5(_ sender: UISwitch) {
@@ -167,6 +220,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet1.setOn(true, animated: true)
             SwitchOutlet2.setOn(true, animated: true)
         }
+        BlueAllOn()
     }
     
     
@@ -180,6 +234,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet6.setOn(true, animated: true)
             SwitchOutlet7.setOn(true, animated: true)
         }
+       RedAllOn()
         
     }
     @IBAction func Switch7(_ sender: UISwitch) {
@@ -196,6 +251,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet9.setOn(true, animated: true)
             SwitchOutlet7.setOn(false, animated: true)
         }
+        RedAllOn()
         
     }
     @IBAction func Switch8(_ sender: UISwitch) {
@@ -209,6 +265,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet7.setOn(false, animated: true)
             SwitchOutlet8.setOn(true, animated: true)
         }
+        RedAllOn()
         
         
     }
@@ -222,6 +279,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet10.setOn(true, animated: true)
             SwitchOutlet9.setOn(true, animated: true)
         }
+        RedAllOn()
     }
     
     @IBAction func Switch10(_ sender: UISwitch) {
@@ -236,6 +294,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             SwitchOutlet9.setOn(true, animated: true)
             
         }
+        RedAllOn()
         
     }
     
@@ -339,11 +398,19 @@ class ViewController: UIViewController,UITextFieldDelegate {
         {
             let alert = UIAlertController(title: "Red Hacker Got Hacked!", message:"\(BlueHacker.text!)", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Play Again?", style: .default, handler: { (action) in
+                
+                self.BlueHacker.alpha = 1
+                self.RedHacker.alpha = 1
+                self.RedShield.alpha = 0
+                self.BluesShield.alpha = 0
+                
+                
+                
             }))
             self.present(alert,animated: true, completion: nil)
         }
         
-    
+        
         
         
     }
@@ -355,6 +422,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
         {
             let alert = UIAlertController(title: "Blue Hacker Got Hacked!", message:"\(RedHacker.text!)", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Play Again?", style: .default, handler: { (action) in
+                
+                self.BlueHacker.alpha = 1
+                self.RedHacker.alpha = 1
+                self.RedShield.alpha = 0
+                self.BluesShield.alpha = 0
+                self.RedLabel.text = ""
+                self.BlueLabel.text = ""
+                self.RedLabel.alpha = 0
+                self.BlueLabel.alpha = 0
+                self.horizontalSlider.alpha = 0
+                self.horizontalSlider2.alpha = 0
+                self.verticalSlider1.alpha = 0
+                self.verticalSlider2.alpha = 0
+                
             }))
             self.present(alert,animated: true, completion: nil)
         }
