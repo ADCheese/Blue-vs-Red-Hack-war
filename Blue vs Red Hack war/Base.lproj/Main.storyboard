@@ -30,16 +30,6 @@
                                 <rect key="frame" x="-36" y="414" width="846" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hacker Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osu-hZ-dQJ">
-                                <rect key="frame" x="20" y="20" width="137" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ih8-fF-G2g"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hacker Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JP-CF-JHJ">
                                 <rect key="frame" x="20" y="549" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,14 +40,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mQq-e9-3mw"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWz-kt-tx3">
-                                <rect key="frame" x="11" y="6" width="317" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="60"/>
-                                <color key="textColor" red="1" green="0.14273843879137305" blue="0.18469874719725565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-Uq-sIJ">
                                 <rect key="frame" x="11" y="535" width="317" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -368,12 +350,30 @@
                                 <color key="shadowColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn off Red's Shield!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W29-vO-ZWm">
-                                <rect key="frame" x="214" y="549" width="368" height="48"/>
+                                <rect key="frame" x="215" y="644" width="368" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.062960177379999996" green="0.51978343729999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.79596421630000003" green="0.15349372159999999" blue="0.076196120120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" red="0.41776635359999997" green="0.033168153649999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hacker Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osu-hZ-dQJ">
+                                <rect key="frame" x="20" y="464" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ih8-fF-G2g"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWz-kt-tx3">
+                                <rect key="frame" x="-2" y="440" width="317" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.14273843879137305" blue="0.18469874719725565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="deviceRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

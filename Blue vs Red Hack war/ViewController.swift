@@ -11,8 +11,16 @@ import AVFoundation
 
 class ViewController: UIViewController,UITextFieldDelegate {
     var player:AVAudioPlayer = AVAudioPlayer()
-    @IBOutlet weak var RedHacker: UITextField!
-    @IBOutlet weak var RedLabel: UILabel!
+    @IBOutlet weak var RedHacker: UITextField! {
+        didSet{
+        RedHacker.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+    }
+}
+    @IBOutlet weak var RedLabel: UILabel! {
+        didSet{
+            RedHacker.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+    }
+    }
     @IBOutlet weak var BlueLabel: UILabel!
     @IBOutlet weak var BlueHacker: UITextField!
     @IBOutlet weak var RedShield: UILabel! {
