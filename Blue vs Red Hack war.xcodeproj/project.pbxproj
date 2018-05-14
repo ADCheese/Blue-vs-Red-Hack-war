@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE245C3B20A9EB0200622074 /* cyber.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE245C3A20A9EB0200622074 /* cyber.mp3 */; };
 		DE4CA64620A4A77400196649 /* Shield Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CA64520A4A77400196649 /* Shield Sliders.swift */; };
 		DEFF929B20601C5F00765D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF929A20601C5F00765D90 /* AppDelegate.swift */; };
 		DEFF929D20601C5F00765D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF929C20601C5F00765D90 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE245C3A20A9EB0200622074 /* cyber.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cyber.mp3; sourceTree = "<group>"; };
 		DE4CA64520A4A77400196649 /* Shield Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shield Sliders.swift"; sourceTree = "<group>"; };
 		DEFF929720601C5F00765D90 /* Blue vs Red Hack war.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue vs Red Hack war.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFF929A20601C5F00765D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DEFF929C20601C5F00765D90 /* ViewController.swift */,
 				DEFF929E20601C5F00765D90 /* Main.storyboard */,
 				DEFF92A120601C5F00765D90 /* Assets.xcassets */,
+				DE245C3A20A9EB0200622074 /* cyber.mp3 */,
 				DEFF92A320601C5F00765D90 /* LaunchScreen.storyboard */,
 				DEFF92A620601C5F00765D90 /* Info.plist */,
 				DE4CA64520A4A77400196649 /* Shield Sliders.swift */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE245C3B20A9EB0200622074 /* cyber.mp3 in Resources */,
 				DEFF92A520601C5F00765D90 /* LaunchScreen.storyboard in Resources */,
 				DEFF92A220601C5F00765D90 /* Assets.xcassets in Resources */,
 				DEFF92A020601C5F00765D90 /* Main.storyboard in Resources */,
@@ -285,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.619481.Blue-vs-Red-Hack-war";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -300,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.619481.Blue-vs-Red-Hack-war";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

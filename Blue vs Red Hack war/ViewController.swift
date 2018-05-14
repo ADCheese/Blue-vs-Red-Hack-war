@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController,UITextFieldDelegate {
+    var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var RedHacker: UITextField!
     @IBOutlet weak var RedLabel: UILabel!
     @IBOutlet weak var BlueLabel: UILabel!
     @IBOutlet weak var BlueHacker: UITextField!
-    @IBOutlet weak var RedShield: UILabel!
+    @IBOutlet weak var RedShield: UILabel! {
+        didSet{
+        RedShield.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        }
+    }
     @IBOutlet weak var BluesShield: UILabel!
     
     
@@ -148,6 +154,19 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        do
+        {
+            let audioPath = Bundle.main.path(forResource: "cyber", ofType: "mp3")
+            try player = AVAudioPlayer (contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch
+            
+        {
+            //ERROR
+        }
+        self.player.play()
         
         
     }
@@ -417,8 +436,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func ActionSlider2(_ sender: UISlider) {
         let value = sender.value
         
-        if verticalSlider3.value == 0 &&
-            verticalSlider4.value == 0 && horizontalSlider3.value == 0 && horizontalSlider4.value == 0
+        if verticalSlider3.value == 1 &&
+            verticalSlider4.value == 1 && horizontalSlider3.value == 0 && horizontalSlider4.value == 0
         {
             let alert = UIAlertController(title: "Blue Hacker Got Hacked!", message:"\(RedHacker.text!)", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Play Again?", style: .default, handler: { (action) in
